@@ -1,0 +1,30 @@
+{% extends 'base.html' %} 
+{% load static %}
+{% block content %}
+	
+	<section class="topic-list container">
+		<div>
+			<h2 class="text-header second-topic-list">WELCOME TO SEEDSTAR USERLIST </h2>
+			<h4> Add a username and email in our add-page <br>And <br>View all added usernames and emails in our list-page </h4>
+		</div>
+	</section>
+	<section class="third-topic-list container">
+		<div class="form-row">
+			<div class="col-6 col-md-6 mb-6 mb-md-0">
+				<div class="new-container link-enhancer padded">
+					<h4>
+						<a href="{% url 'add_user' %}">ADD NEW USER</a>
+					</h4>
+				</div>
+			</div>
+			<div class="col-6 col-md-6 mb-6 mb-md-0">
+				<div class="new-container link-enhancer padded">
+					<h4>
+						<a href="{% url 'list_users' %}">USERS LIST</a>
+					</h4>
+				</div>
+			</div>		
+		</div>
+	</section>
+	
+{% endblock content %}

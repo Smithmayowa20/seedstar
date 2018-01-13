@@ -1,0 +1,25 @@
+{% extends 'base.html' %} 
+{% load static %}
+{% block content %}
+
+	<section class="topic-list container">
+		<div>
+			<h2>USERS LIST </h2>
+		</div>
+	</section>
+	<section class="second-topic-list container">
+		<div class="form-row">
+			<div class="col-0 col-md-2 mb-2 mb-md-0"></div>
+			<div class="col-12 col-md-8 mb-2 mb-md-0 text-center">
+				{% for user in users %}
+					<div class="new-container padded">
+						<h4>User : {{user.name|title}}</h4><br>
+						<h4>Email : {{user.email}}</h4>
+					</div>
+				{% endfor %}
+			</div>		
+			<div class="col-0 col-md-2 mb-2 mb-md-0"></div>
+		</div>
+	</section>
+	
+{% endblock content %}
