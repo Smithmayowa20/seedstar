@@ -10,7 +10,3 @@ Make an application which stores names and email addresses in a database (SQLite
 
 This is a django based application so please make sure you use correctly all of django infrastructure (form, template inheritance, ORM). Also make sure the app does not have major security problems: CSRF, XSS, SQL Injection.
 
-Make reasonable assumptions, state your assumptions, and proceed. Once you have completed the challenge let us know and share your thoughts on the problems/solutions.
-
-Good luck!
-
