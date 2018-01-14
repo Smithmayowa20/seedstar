@@ -6,9 +6,11 @@ from django.http import HttpRequest
 from django.template import RequestContext
 from datetime import datetime
 from django.http import HttpResponseRedirect
+from django.shortcuts import (render_to_response)
 
 from .models import Users
 from .forms import UserForm
+
 
 def index(request):
     return render(request, 'index.html')

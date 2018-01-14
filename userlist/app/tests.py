@@ -5,7 +5,7 @@ from django.core.urlresolvers import reverse
 
 class UserFormTestCase(TestCase):
 	#loading a saved python-manage.py-datadump 
-	#database
+	#database stored in the fixtures directory
     fixtures = ['users_view_testdata.json']
     
     def setUp(self):
